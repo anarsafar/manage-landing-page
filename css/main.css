@@ -21,6 +21,12 @@ img {
   margin: 0 auto;
 }
 
+p {
+  color: #9095a7;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 ul li {
   list-style-type: none;
 }
@@ -178,9 +184,6 @@ header nav ul li a:hover {
 }
 
 .header-intro .header-intro-info p {
-  color: #9095a7;
-  font-size: 14px;
-  font-weight: 500;
   width: 50%;
   margin: 1.5rem 0;
   line-height: 1.4rem;
@@ -200,5 +203,57 @@ header nav ul li a:hover {
   -webkit-transform: translate(27%, -30%);
           transform: translate(27%, -30%);
   z-index: -1;
+}
+
+.different {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 4rem;
+}
+
+.different .different-info {
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
+}
+
+.different .different-info h1 {
+  color: #242d52;
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+.different .different-info p {
+  width: 70%;
+}
+
+.different .different-elements {
+  -ms-flex-negative: 8;
+      flex-shrink: 8;
+}
+
+.different .different-elements .different-element {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.different .different-elements .different-element .btn-orange {
+  cursor: auto;
+  margin: 14px 1rem 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 8px 1.3rem;
+}
+
+.different .different-elements .different-element .btn-orange:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.different .different-elements .different-element h3 {
+  color: #242d52;
+  font-weight: 700;
+  font-size: 15px;
 }
 /*# sourceMappingURL=main.css.map */

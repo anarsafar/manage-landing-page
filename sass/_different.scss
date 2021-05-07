@@ -1,0 +1,35 @@
+.different{
+    align-items: flex-start;
+    margin-top: 4rem;
+    .different-info{
+        flex-shrink: 4;
+        h1{
+            color: $dark-blue;
+            font-size: 2.6rem;
+            margin: 0;
+        }
+        p{
+            width: 70%;
+        }
+    }
+    .different-elements{
+        .different-element{
+            .btn-orange{
+                cursor: auto;
+                margin: 14px 1rem 0 ;
+                box-shadow: none;
+                padding: 8px 1.3rem;
+                &:hover{
+                    filter: none;
+                }
+            }
+            h3{
+                color: $dark-blue;
+                font-weight: 700;
+                font-size: 15px;
+            }
+            align-items: flex-start;
+        }
+        flex-shrink: 8;
+    }
+}
