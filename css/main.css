@@ -10,4 +10,119 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flex-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.btn-orange {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 11px 1.7rem;
+  border-radius: 1.3rem;
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background: #f25f3a;
+  color: #ffefeb;
+  -webkit-box-shadow: 0px 14px 16px -12px #f25f3a;
+          box-shadow: 0px 14px 16px -12px #f25f3a;
+}
+
+.btn-orange:focus {
+  outline: none;
+}
+
+.btn-orange:hover {
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+}
+
+.btn-white {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 11px 1.7rem;
+  border-radius: 1.3rem;
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background: #fff;
+  color: transparent;
+}
+
+.btn-white:focus {
+  outline: none;
+}
+
+.btn-white:hover {
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+}
+
+.btn-go {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 11px 1.7rem;
+  border-radius: 1.3rem;
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background: #f25f3a;
+  color: #ffefeb;
+}
+
+.btn-go:focus {
+  outline: none;
+}
+
+.btn-go:hover {
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+}
 /*# sourceMappingURL=main.css.map */

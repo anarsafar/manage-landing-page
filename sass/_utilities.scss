@@ -20,3 +20,67 @@ $dark-grayish-blue:hsl(227, 12%, 61%);
 $very-dark-blue: hsl(233, 12%, 13%);
 $very-pale-red: hsl(13, 100%, 96%);
 $very-light-gray:hsl(0, 0%, 98%);
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+//flex classes
+@mixin flex(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-horizontal{
+   @include flex();
+}
+
+.flex-vertical{
+    @include flex();
+    flex-direction: column;
+}
+
+//button classes
+@mixin button(){
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 11px 1.7rem;
+    border-radius: 1.3rem;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        filter: opacity(0.7)
+    }
+}
+
+.btn-orange{
+    @include button();
+    background: $bright-red;
+    color: $very-pale-red;
+    box-shadow: 0px 14px 16px -12px $bright-red;
+}
+
+.btn-white{
+    @include button();
+    background: #fff;
+    color: transparent;
+}
+
+.btn-go{
+    @include button();
+    background: $bright-red;
+    color: $very-pale-red;
+}
