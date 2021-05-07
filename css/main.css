@@ -256,4 +256,9 @@ header nav ul li a:hover {
   font-weight: 700;
   font-size: 15px;
 }
+
+.testimonials {
+  border: 1px solid orangered;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
