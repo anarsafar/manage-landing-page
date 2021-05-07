@@ -20,6 +20,14 @@ img {
   margin: 0 auto;
 }
 
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
 .flex-horizontal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,5 +132,29 @@ img {
 .btn-go:hover {
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
+}
+
+header {
+  margin-top: 1rem !important;
+}
+
+header .logo {
+  cursor: pointer;
+}
+
+header nav ul li {
+  margin: 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+header nav ul li a {
+  color: #1d1e25;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #9095a7;
 }
 /*# sourceMappingURL=main.css.map */

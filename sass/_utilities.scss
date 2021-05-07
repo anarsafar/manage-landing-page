@@ -30,6 +30,16 @@ img{
     margin: 0 auto;
 }
 
+//clearing default settings
+ul{
+    li{
+        list-style-type:none;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
 //flex classes
 @mixin flex(){
     display: flex;

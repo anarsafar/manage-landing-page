@@ -1,0 +1,23 @@
+header {
+  margin-top: 1rem !important;
+  .logo{
+      cursor: pointer;
+  }
+  //navbar
+  nav {
+    ul {
+      li {
+        margin: 0 10px;
+        font-size: 12px;
+        font-weight: 700;
+        a {
+          color: $very-dark-blue;
+          transition: 0.4s ease-in-out;
+          &:hover{
+              color: $dark-grayish-blue;
+          }
+        }
+      }
+    }
+  }
+}
