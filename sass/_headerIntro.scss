@@ -1,0 +1,34 @@
+.header-intro{
+    margin-top: 3rem;
+    .header-intro-info{
+        flex-shrink: 3;
+        h1{
+            font-size: 4rem;
+            margin: 0;
+            padding: 0;
+            line-height: 4.2rem;
+            font-weight: 700;
+            color: $dark-blue;
+        }
+        p{
+            color:$dark-grayish-blue;
+            font-size: 14px;
+            font-weight: 500;
+            width: 50%;
+            margin: 1.5rem 0;
+            line-height: 1.4rem;
+        }
+    }
+    .header-intro-charts{
+        flex-shrink: 1;
+        position: relative;
+        .orange-pattern{
+            position: absolute;
+            width: 40rem;
+            top: -80px;
+            right: -50px;
+            transform: translate(27%,-30%);
+            z-index: -1;
+        }
+    }
+}

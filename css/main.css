@@ -4,6 +4,7 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: 'Be Vietnam', sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -144,17 +145,60 @@ header .logo {
 
 header nav ul li {
   margin: 0 10px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 header nav ul li a {
-  color: #1d1e25;
+  color: #242d52;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
 header nav ul li a:hover {
   color: #9095a7;
+}
+
+.header-intro {
+  margin-top: 3rem;
+}
+
+.header-intro .header-intro-info {
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+}
+
+.header-intro .header-intro-info h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+  line-height: 4.2rem;
+  font-weight: 700;
+  color: #242d52;
+}
+
+.header-intro .header-intro-info p {
+  color: #9095a7;
+  font-size: 14px;
+  font-weight: 500;
+  width: 50%;
+  margin: 1.5rem 0;
+  line-height: 1.4rem;
+}
+
+.header-intro .header-intro-charts {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  position: relative;
+}
+
+.header-intro .header-intro-charts .orange-pattern {
+  position: absolute;
+  width: 40rem;
+  top: -80px;
+  right: -50px;
+  -webkit-transform: translate(27%, -30%);
+          transform: translate(27%, -30%);
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
