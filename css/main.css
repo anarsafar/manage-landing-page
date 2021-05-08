@@ -210,6 +210,15 @@ header nav ul li a:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 4rem;
+  position: relative;
+}
+
+.different .bg-orange {
+  position: absolute;
+  width: 40rem;
+  z-index: -1;
+  top: 50%;
+  left: -35%;
 }
 
 .different .different-info {
