@@ -86,14 +86,17 @@ ul{
 .btn-orange{
     @include button();
     background: $bright-red;
-    color: $very-pale-red;
+    color: $very-light-gray;
     box-shadow: 0px 14px 16px -12px $bright-red;
 }
 
 .btn-white{
     @include button();
-    background: #fff;
-    color: transparent;
+    background: $very-light-gray;
+    color: $bright-red;
+    &:hover{
+        filter: opacity(1) brightness(170%);
+    }
 }
 
 .btn-go{

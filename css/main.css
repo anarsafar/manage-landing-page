@@ -79,7 +79,7 @@ ul li a {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   background: #f25f3a;
-  color: #ffefeb;
+  color: #fafafa;
   -webkit-box-shadow: 0px 14px 16px -12px #f25f3a;
           box-shadow: 0px 14px 16px -12px #f25f3a;
 }
@@ -104,8 +104,8 @@ ul li a {
   font-weight: 700;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
-  background: #fff;
-  color: transparent;
+  background: #fafafa;
+  color: #f25f3a;
 }
 
 .btn-white:focus {
@@ -115,6 +115,11 @@ ul li a {
 .btn-white:hover {
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
+}
+
+.btn-white:hover {
+  -webkit-filter: opacity(1) brightness(170%);
+          filter: opacity(1) brightness(170%);
 }
 
 .btn-go {
@@ -321,5 +326,18 @@ header nav ul li a:hover {
 .testimonials .slider .person .info {
   position: relative;
   top: -30px;
+}
+
+.simplify {
+  background: url("../images/bg-simplify-section-desktop.svg") 7rem -8rem no-repeat #f25f3a;
+  color: #fafafa;
+  padding: 10px 0;
+  margin-top: 6rem;
+}
+
+.simplify .container .text h1 {
+  font-size: 2.2rem;
+  width: 70%;
+  line-height: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */
