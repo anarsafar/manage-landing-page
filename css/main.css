@@ -134,6 +134,7 @@ ul li a {
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   background: #f25f3a;
+  padding: 9px 1.4rem;
   color: #ffefeb;
 }
 
@@ -144,6 +145,41 @@ ul li a {
 .btn-go:hover {
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
+}
+
+.btn-go:hover {
+  -webkit-filter: opacity(1) brightness(150%);
+          filter: opacity(1) brightness(150%);
+}
+
+input {
+  border: 1px solid #fff;
+  border-radius: 1.3rem;
+  padding: 9px 13px;
+  margin-right: 5px;
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+input:-ms-input-placeholder {
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+input::-ms-input-placeholder {
+  font-family: 'Be Vietnam', sans-serif;
+}
+
+input::placeholder {
+  font-family: 'Be Vietnam', sans-serif;
 }
 
 header {
@@ -331,7 +367,7 @@ header nav ul li a:hover {
 .simplify {
   background: url("../images/bg-simplify-section-desktop.svg") 7rem -8rem no-repeat #f25f3a;
   color: #fafafa;
-  padding: 10px 0;
+  padding: 15px 0;
   margin-top: 6rem;
 }
 
@@ -339,5 +375,83 @@ header nav ul li a:hover {
   font-size: 2.2rem;
   width: 70%;
   line-height: 2.5rem;
+}
+
+footer {
+  background: #1d1e25;
+  padding: 2.5rem 0;
+}
+
+footer .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .container .social {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+footer .container .social .logo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  margin: 0 5px;
+}
+
+footer .container .social .social-icons {
+  margin-top: 4rem;
+}
+
+footer .container .social .social-icons i {
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #fafafa;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+footer .container .social .social-icons i:hover {
+  color: #f25f3a;
+}
+
+footer .container .footer-nav {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+footer .container .footer-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .container .footer-nav ul li {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+footer .container .footer-nav ul li a {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  color: #fafafa;
+}
+
+footer .container .footer-nav ul li a:hover {
+  color: #f25f3a;
+}
+
+footer .container form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=main.css.map */

@@ -102,5 +102,25 @@ ul{
 .btn-go{
     @include button();
     background: $bright-red;
+    padding: 9px 1.4rem;
     color: $very-pale-red;
+    &:hover{
+        filter: opacity(1) brightness(150%);
+    }
+}
+
+input{
+    border: 1px solid #fff;
+    border-radius: 1.3rem;
+    padding: 9px 13px;
+    margin-right: 5px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        font-family: 'Be Vietnam', sans-serif;
+    }
 }
