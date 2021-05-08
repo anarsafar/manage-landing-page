@@ -1,4 +1,45 @@
-.testimonials{
-    border: 1px solid orangered;
-    text-align: center;
+.testimonials {
+  text-align: center;
+  margin-top: 4rem;
+  overflow: hidden;
+  position: relative;
+  h1 {
+    color: $dark-blue;
+    font-size: 2rem;
+  }
+  .slider {
+    padding: 5rem 0 2rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    //disable view of scrollbar
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    & > .person {
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      width: 35%;
+      height: 200px;
+    }
+    .person {
+      background: $very-light-gray;
+      margin: 0 1.3rem;
+      padding: 0 20px;
+      .profile {
+        position: relative;
+        top: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+      }
+      .info {
+        position: relative;
+        top: -30px;
+      }
+    }
+  }
 }

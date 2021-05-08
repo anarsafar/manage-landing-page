@@ -166,7 +166,7 @@ header nav ul li a:hover {
 }
 
 .header-intro {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }
 
 .header-intro .header-intro-info {
@@ -258,7 +258,59 @@ header nav ul li a:hover {
 }
 
 .testimonials {
-  border: 1px solid orangered;
   text-align: center;
+  margin-top: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials h1 {
+  color: #242d52;
+  font-size: 2rem;
+}
+
+.testimonials .slider {
+  padding: 5rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonials .slider::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.testimonials .slider > .person {
+  scroll-snap-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 35%;
+  height: 200px;
+}
+
+.testimonials .slider .person {
+  background: #fafafa;
+  margin: 0 1.3rem;
+  padding: 0 20px;
+}
+
+.testimonials .slider .person .profile {
+  position: relative;
+  top: -2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70px;
+}
+
+.testimonials .slider .person .info {
+  position: relative;
+  top: -30px;
 }
 /*# sourceMappingURL=main.css.map */
