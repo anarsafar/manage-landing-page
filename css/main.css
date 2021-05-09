@@ -444,6 +444,40 @@ footer .container .form {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  position: relative;
+}
+
+footer .container .form .error {
+  border: 1px solid red;
+  color: red;
+}
+
+footer .container .form .error::-webkit-input-placeholder {
+  color: red;
+}
+
+footer .container .form .error:-ms-input-placeholder {
+  color: red;
+}
+
+footer .container .form .error::-ms-input-placeholder {
+  color: red;
+}
+
+footer .container .form .error::placeholder {
+  color: red;
+}
+
+footer .container .form .error-message {
+  color: red !important;
+  position: absolute;
+  left: 40%;
+  top: -18%;
+  display: none;
+}
+
+footer .container .form .show-error-message {
+  display: block;
 }
 
 footer .container .form span {

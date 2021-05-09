@@ -47,6 +47,24 @@ footer {
       flex-direction: column;
       align-items: flex-end;
       flex-grow: 1;
+      position: relative;
+      .error{
+        border: 1px solid red;
+        color: red;
+        &::placeholder{
+          color: red;
+        }
+      }
+      .error-message{
+        color: red !important;
+        position: absolute;
+        left: 40%;
+        top: -18%;
+        display: none;
+      }
+      .show-error-message{
+        display: block;
+      }
       span{
         color: $dark-grayish-blue;
         margin-top: 4rem;
