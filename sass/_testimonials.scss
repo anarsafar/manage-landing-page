@@ -15,7 +15,7 @@
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    //disable view of scrollbar
+    //disable view of scrollbar in desktop devices
     &::-webkit-scrollbar {
       width: 0;
       height: 0;

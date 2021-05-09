@@ -43,29 +43,29 @@ footer {
         }
       }
     }
-    .form{
+    .form {
       flex-direction: column;
       align-items: flex-end;
       flex-grow: 1;
       position: relative;
-      .error{
+      .error {
         border: 1px solid red;
         color: red;
-        &::placeholder{
+        &::placeholder {
           color: red;
         }
       }
-      .error-message{
+      .error-message {
         color: red !important;
         position: absolute;
         left: 40%;
         top: -18%;
         display: none;
       }
-      .show-error-message{
+      .show-error-message {
         display: block;
       }
-      span{
+      span {
         color: $dark-grayish-blue;
         margin-top: 4rem;
         font-size: 11px;
