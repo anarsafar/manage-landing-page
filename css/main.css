@@ -49,24 +49,6 @@ ul li a {
       align-content: center;
 }
 
-.flex-vertical {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .btn-orange {
   border: none;
   background: none;
@@ -183,11 +165,12 @@ input::placeholder {
 }
 
 header {
-  margin-top: 1rem !important;
+  margin-top: 1.1rem !important;
 }
 
 header .logo {
   cursor: pointer;
+  margin-top: 14px;
 }
 
 header nav ul li {
@@ -234,6 +217,7 @@ header nav ul li a:hover {
   -ms-flex-negative: 1;
       flex-shrink: 1;
   position: relative;
+  margin-right: -1.1rem;
 }
 
 .header-intro .header-intro-charts .orange-pattern {
@@ -258,8 +242,8 @@ header nav ul li a:hover {
   position: absolute;
   width: 40rem;
   z-index: -1;
-  top: 50%;
-  left: -35%;
+  top: 60%;
+  left: -45%;
 }
 
 .different .different-info {
@@ -274,7 +258,8 @@ header nav ul li a:hover {
 }
 
 .different .different-info p {
-  width: 70%;
+  width: 50%;
+  line-height: 1.4rem;
 }
 
 .different .different-elements {
@@ -309,6 +294,7 @@ header nav ul li a:hover {
 
 .testimonials {
   text-align: center;
+  padding-bottom: 1.1rem;
   margin-top: 4rem;
   overflow: hidden;
   position: relative;
@@ -398,6 +384,7 @@ footer .container .social .logo {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   margin: 0 5px;
+  cursor: pointer;
 }
 
 footer .container .social .social-icons {
@@ -446,10 +433,26 @@ footer .container .footer-nav ul li a:hover {
   color: #f25f3a;
 }
 
-footer .container form {
+footer .container .form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+footer .container .form span {
+  color: #9095a7;
+  margin-top: 4rem;
+  font-size: 11px;
+}
+
+footer .container .form form {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

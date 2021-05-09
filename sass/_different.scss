@@ -6,8 +6,8 @@
         position: absolute;
         width: 40rem;
         z-index: -1;
-        top: 50%;
-        left:-35%;
+        top: 60%;
+        left:-45%;
     }
     .different-info{
         flex-shrink: 4;
@@ -17,7 +17,8 @@
             margin: 0;
         }
         p{
-            width: 70%;
+            width: 50%;
+            line-height: 1.4rem;
         }
     }
     .different-elements{

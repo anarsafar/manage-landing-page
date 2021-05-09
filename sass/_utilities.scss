@@ -59,11 +59,6 @@ ul{
    @include flex();
 }
 
-.flex-vertical{
-    @include flex();
-    flex-direction: column;
-}
-
 //button classes
 @mixin button(){
     border: none;
@@ -109,6 +104,7 @@ ul{
     }
 }
 
+//clearing default input settings
 input{
     border: 1px solid #fff;
     border-radius: 1.3rem;

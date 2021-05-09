@@ -8,19 +8,20 @@ footer {
       .logo {
         filter: brightness(0) invert(1);
         margin: 0 5px;
+        cursor: pointer;
       }
-      .social-icons{
-          margin-top: 4rem;
-          i{
-            margin: 0 5px;
-            cursor: pointer;
-            font-size: 1.4rem;
-            color: $very-light-gray;
-            transition: 0.4s ease-in-out;
-            &:hover{
-                color: $bright-red;
-            }
+      .social-icons {
+        margin-top: 4rem;
+        i {
+          margin: 0 5px;
+          cursor: pointer;
+          font-size: 1.4rem;
+          color: $very-light-gray;
+          transition: 0.4s ease-in-out;
+          &:hover {
+            color: $bright-red;
           }
+        }
       }
     }
     .footer-nav {
@@ -42,9 +43,18 @@ footer {
         }
       }
     }
-    form {
+    .form{
+      flex-direction: column;
+      align-items: flex-end;
       flex-grow: 1;
-      justify-content: flex-end;
+      span{
+        color: $dark-grayish-blue;
+        margin-top: 4rem;
+        font-size: 11px;
+      }
+      form {
+        justify-content: flex-end;
+      }
     }
   }
 }
