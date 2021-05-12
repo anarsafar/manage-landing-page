@@ -800,6 +800,11 @@ footer .container .form form {
     position: relative;
     width: 100%;
   }
+  footer .container .form .error-message {
+    font-size: 12px;
+    left: 3%;
+    top: 100%;
+  }
   footer .container .form form {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -821,7 +826,7 @@ footer .container .form form {
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 100%;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
   }
   footer .container .social {
     -webkit-box-flex: unset;
@@ -837,7 +842,7 @@ footer .container .form form {
             flex-direction: column-reverse;
   }
   footer .container .social .logo {
-    margin: 2rem auto;
+    margin: 2.4rem auto;
   }
   footer .container .social .copyright {
     text-align: center;

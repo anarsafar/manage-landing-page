@@ -89,12 +89,17 @@ footer {
         align-items: center;
         position: relative;
         width: 100%;
+        .error-message{
+          font-size: 12px;
+          left: 3%;
+          top: 100%;
+        }
         form {
           justify-content: space-between;
           input {
             width: 90%;
           }
-          .btn-go{
+          .btn-go {
             padding: 10px 1.4rem;
           }
           width: 100%;
@@ -107,7 +112,7 @@ footer {
       .footer-nav {
         flex-grow: 1;
         width: 100%;
-        padding: 1.5rem;
+        padding:2rem 1.5rem;
       }
       .social {
         flex-grow: unset;
@@ -115,7 +120,7 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         .logo {
-          margin: 2rem auto;
+          margin: 2.4rem auto;
         }
         .copyright {
           text-align: center;
