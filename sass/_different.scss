@@ -23,6 +23,11 @@
   }
   .different-elements {
     .different-element {
+      div {
+        .btn-orange-mobile {
+          display: none;
+        }
+      }
       .btn-orange {
         cursor: auto;
         margin: 14px 1rem 0;
@@ -79,8 +84,8 @@
   .different {
     margin-top: 6rem;
     flex-direction: column;
-    .bg-orange{
-        display: none;
+    .bg-orange {
+      display: none;
     }
     .different-info {
       text-align: center;
@@ -92,14 +97,34 @@
         width: 100%;
       }
     }
-    .different-elements{
-        flex-shrink: 1;
-        .different-element{
-            h3{
-                background: $very-pale-red;
-                padding: 10px;
-            }
+    .different-elements {
+      flex-shrink: 1;
+      .different-element {
+        display: block;
+        .hide-mobile {
+          display: none;
         }
+        div {
+          .btn-orange-mobile {
+            display: inline-block;
+            margin: 0;
+            position: relative;
+            left: -5px;
+          }
+        }
+        h3 {
+          background: $very-pale-red;
+          padding: 0px;
+          position: relative;
+          border-top-left-radius: 1.3rem;
+          border-bottom-left-radius: 1.3rem;
+          margin-left: 7px;
+          width: 110%;
+        }
+        p {
+          line-height: 1.6rem;
+        }
+      }
     }
   }
 }

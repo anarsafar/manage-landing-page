@@ -407,6 +407,10 @@ header nav ul li a:hover {
           align-items: flex-start;
 }
 
+.different .different-elements .different-element div .btn-orange-mobile {
+  display: none;
+}
+
 .different .different-elements .different-element .btn-orange {
   cursor: auto;
   margin: 14px 1rem 0;
@@ -482,9 +486,29 @@ header nav ul li a:hover {
     -ms-flex-negative: 1;
         flex-shrink: 1;
   }
+  .different .different-elements .different-element {
+    display: block;
+  }
+  .different .different-elements .different-element .hide-mobile {
+    display: none;
+  }
+  .different .different-elements .different-element div .btn-orange-mobile {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    left: -5px;
+  }
   .different .different-elements .different-element h3 {
     background: #ffefeb;
-    padding: 10px;
+    padding: 0px;
+    position: relative;
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+    margin-left: 7px;
+    width: 110%;
+  }
+  .different .different-elements .different-element p {
+    line-height: 1.6rem;
   }
 }
 
