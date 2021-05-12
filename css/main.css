@@ -487,6 +487,7 @@ header nav ul li a:hover {
         flex-shrink: 1;
   }
   .different .different-elements .different-element {
+    margin: 2rem 0;
     display: block;
   }
   .different .different-elements .different-element .hide-mobile {
@@ -606,10 +607,16 @@ header nav ul li a:hover {
   .testimonials .dots {
     display: block;
   }
+  .testimonials .btn-orange {
+    margin-top: 2rem;
+  }
   .testimonials .slider > .person {
     width: 90%;
     padding: 0 2rem;
     height: 220px;
+  }
+  .testimonials .slider > .person .info p {
+    line-height: 1.6rem;
   }
 }
 

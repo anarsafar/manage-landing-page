@@ -82,11 +82,19 @@
     .dots {
       display: block;
     }
+    .btn-orange{
+      margin-top: 2rem;
+    }
     .slider {
       & > .person {
         width: 90%;
         padding: 0 2rem;
         height: 220px;
+        .info{
+          p{
+            line-height: 1.6rem;
+          }
+        }
       }
     }
   }

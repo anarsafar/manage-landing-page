@@ -100,6 +100,7 @@
     .different-elements {
       flex-shrink: 1;
       .different-element {
+        margin: 2rem 0;
         display: block;
         .hide-mobile {
           display: none;
