@@ -1,97 +1,136 @@
-.header-intro{
-    margin-top: 4.5rem;
-    .header-intro-info{
-        position: relative;
-        flex-shrink: 3;
-        .mobile-pattern{
-            display: none;
-            position: absolute;
-            z-index: -1;
-            width: 18rem;
-            right: -60%;
-            bottom: -35%;
-        }
-        h1{
-            font-size: 4rem;
-            margin: 0;
-            padding: 0;
-            line-height: 4.2rem;
-            font-weight: 700;
-            color: $dark-blue;
-        }
-        p{
-            width: 50%;
-            margin: 1.5rem 0;
-            line-height: 1.4rem;
-        }
+.header-intro {
+  margin-top: 4.5rem;
+  .header-intro-info {
+    position: relative;
+    flex-shrink: 3;
+    .mobile-pattern {
+      display: none;
+      position: absolute;
+      z-index: -1;
     }
-    .header-intro-charts{
-        flex-shrink: 1;
-        position: relative;
-        margin-right: -1.1rem;
-        .orange-pattern{
-            position: absolute;
-            width: 40rem;
-            top: -80px;
-            right: -50px;
-            transform: translate(27%,-30%);
-            z-index: -1;
-        }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      padding: 0;
+      line-height: 4.2rem;
+      font-weight: 700;
+      color: $dark-blue;
     }
+    p {
+      width: 50%;
+      margin: 1.5rem 0;
+      line-height: 1.4rem;
+    }
+  }
+  .header-intro-charts {
+    flex-shrink: 1;
+    position: relative;
+    margin-right: -1.1rem;
+    .orange-pattern {
+      position: absolute;
+      width: 40rem;
+      top: -80px;
+      right: -50px;
+      transform: translate(27%, -30%);
+      z-index: -1;
+    }
+  }
 }
 
-@media screen and (max-width:1150px){
-    .header-intro{
-        .header-intro-info{
-            h1{
-                font-size: 3rem;
-                line-height: 4rem;
-            }
-            p{
-                width: 70%;
-                font-size: 14px !important;
-            }
-        }
+@media screen and (max-width: 1150px) {
+  .header-intro {
+    .header-intro-info {
+      h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+      p {
+        width: 70%;
+        font-size: 14px !important;
+      }
     }
+  }
 }
 
-@media screen and (max-width:950px){
-    .header-intro{
-        .header-intro-info{
-            flex-shrink:2;
-            h1{
-                font-size: 2.5rem;
-                line-height: 3.3rem;
-            }
-        }
+@media screen and (max-width: 950px) {
+  .header-intro {
+    .header-intro-info {
+      flex-shrink: 2;
+      h1 {
+        font-size: 2.5rem;
+        line-height: 3.3rem;
+      }
     }
+  }
 }
 
-@media screen and (max-width:800px){
-    .header-intro{
-        flex-direction: column-reverse;
-        .header-intro-info{
-            .mobile-pattern{
-                display: block;
-            }
-            h1{
-                font-size: 2.3rem;
-                line-height: 3rem;
-            }
-            p{
-                width: 90%;
-                line-height: 1.6rem;
-                margin: 1rem  auto;
-            }
-            text-align: center;
-        }
-        .header-intro-charts{
-            margin: 0 !important;
-            .orange-pattern{
-                width: 30rem;
-                top: -120px;
-                right: -60px;
-            }
-        }
+@media screen and (max-width: 800px) {
+  .header-intro {
+    flex-direction: column-reverse;
+    .header-intro-info {
+        width: 375px;
+      .mobile-pattern {
+        display: block;
+        width: 30rem;
+        right: -120%;
+        bottom: -35%;
+      }
+      h1 {
+        font-size: 2.3rem;
+        line-height: 3rem;
+      }
+      p {
+        width: 90%;
+        line-height: 1.6rem;
+        margin: 1rem auto;
+      }
+      text-align: center;
     }
+    .header-intro-charts {
+      margin: 0 !important;
+      .orange-pattern {
+        width: 40rem;
+        top: -60px;
+        right: -50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:670px){
+    .header-intro {
+        .header-intro-info {
+          .mobile-pattern {
+            // right: -50%;
+            // bottom: -35%;
+          }
+        }
+        .header-intro-charts {
+          .orange-pattern {
+            width: 35rem;
+            top: -40px;
+            right: -30px;
+          }
+        }
+      }
+}
+
+@media screen and (max-width: 450px) {
+  .header-intro {
+    .header-intro-info {
+        width: auto;
+      .mobile-pattern {
+          width: 18rem;
+        right: -55%;
+        bottom: -35%;
+      }
+    }
+    .header-intro-charts {
+      .orange-pattern {
+        width: 30rem;
+        top: -120px;
+        right: -60px;
+      }
+    }
+  }
 }

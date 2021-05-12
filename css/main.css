@@ -273,9 +273,6 @@ header nav ul li a:hover {
   display: none;
   position: absolute;
   z-index: -1;
-  width: 18rem;
-  right: -60%;
-  bottom: -35%;
 }
 
 .header-intro .header-intro-info h1 {
@@ -340,10 +337,14 @@ header nav ul li a:hover {
             flex-direction: column-reverse;
   }
   .header-intro .header-intro-info {
+    width: 375px;
     text-align: center;
   }
   .header-intro .header-intro-info .mobile-pattern {
     display: block;
+    width: 30rem;
+    right: -120%;
+    bottom: -35%;
   }
   .header-intro .header-intro-info h1 {
     font-size: 2.3rem;
@@ -352,10 +353,34 @@ header nav ul li a:hover {
   .header-intro .header-intro-info p {
     width: 90%;
     line-height: 1.6rem;
-    margin: 1rem  auto;
+    margin: 1rem auto;
   }
   .header-intro .header-intro-charts {
     margin: 0 !important;
+  }
+  .header-intro .header-intro-charts .orange-pattern {
+    width: 40rem;
+    top: -60px;
+    right: -50px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header-intro .header-intro-charts .orange-pattern {
+    width: 35rem;
+    top: -40px;
+    right: -30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header-intro .header-intro-info {
+    width: auto;
+  }
+  .header-intro .header-intro-info .mobile-pattern {
+    width: 18rem;
+    right: -55%;
+    bottom: -35%;
   }
   .header-intro .header-intro-charts .orange-pattern {
     width: 30rem;
