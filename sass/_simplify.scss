@@ -1,5 +1,6 @@
 .simplify {
-  background: url("../images/bg-simplify-section-desktop.svg") 7rem -8rem no-repeat $bright-red;
+  background: url("../images/bg-simplify-section-desktop.svg") 7rem -8rem no-repeat
+    $bright-red;
   color: $very-light-gray;
   padding: 1.7rem 0;
   margin-top: 6rem;
@@ -9,6 +10,31 @@
         font-size: 2.2rem;
         width: 70%;
         line-height: 2.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .simplify {
+    background: url("../images/bg-simplify-section-desktop.svg") center
+      no-repeat $bright-red;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .simplify {
+    background: url("../images/bg-simplify-section-mobile.svg") 0 50% no-repeat
+      $bright-red;
+    .container {
+      flex-direction: column;
+      text-align: center;
+      .text {
+        h1 {
+          width: 90%;
+          margin: 0 auto 1rem;
+          line-height: 3rem;
+        }
       }
     }
   }

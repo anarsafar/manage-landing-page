@@ -5,6 +5,9 @@ footer {
     align-items: flex-start;
     .social {
       flex-grow: 1;
+      .copyright {
+        display: none;
+      }
       .logo {
         filter: brightness(0) invert(1);
         margin: 0 5px;
@@ -65,13 +68,70 @@ footer {
       .show-error-message {
         display: block;
       }
-      span {
+      .copyright {
         color: $dark-grayish-blue;
         margin-top: 4rem;
         font-size: 11px;
       }
       form {
         justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+      .form {
+        align-items: center;
+        position: relative;
+        width: 100%;
+        form {
+          justify-content: space-between;
+          input {
+            width: 90%;
+          }
+          .btn-go{
+            padding: 10px 1.4rem;
+          }
+          width: 100%;
+        }
+        .copyright {
+          margin: 0;
+          display: none;
+        }
+      }
+      .footer-nav {
+        flex-grow: 1;
+        width: 100%;
+        padding: 1.5rem;
+      }
+      .social {
+        flex-grow: unset;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        .logo {
+          margin: 2rem auto;
+        }
+        .copyright {
+          text-align: center;
+          color: $dark-grayish-blue;
+          font-size: 11px;
+          display: block;
+        }
+        .social-icons {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin: auto;
+          i {
+            font-size: 2rem;
+          }
+        }
       }
     }
   }

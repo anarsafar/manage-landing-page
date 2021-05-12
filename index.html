@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <title>Manage landing page</title>
   </head>
-  <body>
+  <body class="body-gradient">
     <main>
       <!--Header component with navbar-->
       <header class="flex-horizontal container">
@@ -26,11 +26,18 @@
             <li><a href="#">Community</a></li>
           </ul>
         </nav>
+        <div class="hamburger">
+          <img src="./images/icon-hamburger.svg" alt="" />
+        </div>
+        <div class="close"><img src="./images/icon-close.svg" alt="" /></div>
         <button class="btn-orange">Get Started</button>
       </header>
       <!-- Header Intro -->
       <section class="header-intro container flex-horizontal">
         <div class="header-intro-info">
+          <div class="mobile-pattern">
+            <img src="./images/bg-tablet-pattern.svg" alt="" />
+          </div>
           <h1>Bring everyone together to build better products.</h1>
           <p>
             Manage makes it simple for software teams to plan day-to-day tasks
@@ -156,6 +163,12 @@
             </div>
           </div>
         </div>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
         <button class="btn-orange">Get Started</button>
       </section>
       <!--Simplify-->
@@ -169,6 +182,7 @@
       <footer>
         <div class="container flex-horizontal">
           <div class="social">
+            <span class="copyright">Copyright 2020.All Rights Reserved</span>
             <div class="logo"><img src="./images/logo.svg" alt="" /></div>
             <div class="social-icons">
               <i class="fab fa-facebook-square"></i>
@@ -197,7 +211,7 @@
               <button class="btn-go">Go</button>
             </form>
             <span class="error-message">please insert a valid email</span>
-            <span>Copyright 2020.All Rights Reserved</span>
+            <span class="copyright">Copyright 2020.All Rights Reserved</span>
           </div>
         </div>
       </footer>

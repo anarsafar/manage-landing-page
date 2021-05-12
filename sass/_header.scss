@@ -1,8 +1,13 @@
 header {
   margin-top: 1.1rem !important;
+  position: relative;
   .logo{
       cursor: pointer;
       margin-top: 14px;
+  }
+  .hamburger,.close{
+    display: none;
+    cursor: pointer;
   }
   //navbar
   nav {
@@ -19,6 +24,48 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width:800px){
+  header{
+    .logo{
+      width: 120px;
+    }
+    .hamburger{
+      display: block;
+    }
+    .show-navbar{
+      display: block !important;
+
+    }
+    .show-close{
+      display: block !important;
+    }
+    nav{
+      position: absolute;
+      width: 100%;
+      background:#fff;
+      border-radius: 5px;
+      z-index: 999999;
+      top: 4rem;
+      display: none;
+      //grayish background for menu
+      box-shadow: 0px 300px 223px 300px rgba(0,0,0,0.25);
+      ul{
+        flex-direction: column;
+        padding: 0 !important;
+        li{
+          padding:1rem 0;
+          a{
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    .btn-orange{
+      display: none;
     }
   }
 }

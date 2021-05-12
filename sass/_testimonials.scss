@@ -4,21 +4,40 @@
   margin-top: 4rem;
   overflow: hidden;
   position: relative;
+  .dots {
+    display: none;
+    margin-bottom: 1rem;
+    .active{
+      background: $bright-red;
+    }
+    .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background: transparent;
+      border: 2px solid $bright-red;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.4s ease;
+    }
+  }
   h1 {
     color: $dark-blue;
     font-size: 2rem;
   }
   .slider {
-    padding: 5rem 0 2rem;
+    padding: 5rem 0 10px;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     //disable view of scrollbar in desktop devices
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     &::-webkit-scrollbar {
-      width: 0;
-      height: 0;
+      display: none;
     }
     & > .person {
       scroll-snap-align: center;
@@ -40,6 +59,34 @@
       .info {
         position: relative;
         top: -30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .testimonials {
+    .slider {
+      .person {
+        width: 40%;
+        .info {
+          top: -3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:800px) {
+  .testimonials {
+    .dots {
+      display: block;
+    }
+    .slider {
+      & > .person {
+        width: 90%;
+        padding: 0 2rem;
+        height: 220px;
       }
     }
   }

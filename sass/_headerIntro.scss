@@ -1,7 +1,16 @@
 .header-intro{
     margin-top: 4.5rem;
     .header-intro-info{
+        position: relative;
         flex-shrink: 3;
+        .mobile-pattern{
+            display: none;
+            position: absolute;
+            z-index: -1;
+            width: 18rem;
+            right: -60%;
+            bottom: -35%;
+        }
         h1{
             font-size: 4rem;
             margin: 0;
@@ -27,6 +36,62 @@
             right: -50px;
             transform: translate(27%,-30%);
             z-index: -1;
+        }
+    }
+}
+
+@media screen and (max-width:1150px){
+    .header-intro{
+        .header-intro-info{
+            h1{
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+            p{
+                width: 70%;
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px){
+    .header-intro{
+        .header-intro-info{
+            flex-shrink:2;
+            h1{
+                font-size: 2.5rem;
+                line-height: 3.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .header-intro{
+        flex-direction: column-reverse;
+        .header-intro-info{
+            .mobile-pattern{
+                display: block;
+            }
+            h1{
+                font-size: 2.3rem;
+                line-height: 3rem;
+            }
+            p{
+                width: 90%;
+                line-height: 1.6rem;
+                margin: 1rem  auto;
+            }
+            text-align: center;
+        }
+        .header-intro-charts{
+            margin: 0 !important;
+            .orange-pattern{
+                width: 30rem;
+                top: -120px;
+                right: -60px;
+            }
         }
     }
 }
